@@ -26,7 +26,7 @@ body {
 .wrapper {
     display: flex;
     flex-flow: column nowrap;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: var(--primary-color);
 }
@@ -59,4 +59,13 @@ a {
 
 a:visited {
     color: inherit;
+}
+
+footer {
+    margin: auto auto 0 auto;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 100%;
+    text-align: center;
 }
