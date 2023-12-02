@@ -66,6 +66,10 @@ a:visited {
     color: inherit;
 }
 
+#home a{
+    text-decoration: none;
+}
+
 main {
     font-size: var(--medium-font);
 }
