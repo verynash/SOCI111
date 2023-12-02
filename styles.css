@@ -5,6 +5,7 @@
     --fourth-color: #D8C99B;
     --fifth-color: #FFEFD3;
     --large-font: 28px;
+    --medium-large-font: 24px;
     --medium-font: 20px;
     --small-font: 14px;
     --nav-font: #F5F5F5;
@@ -108,13 +109,24 @@ figcaption {
     font-family: var(--secondary-font-family);
 }
 
-.theorists p, .research p, .theories p {
+.theorists p, .research p, .theories p, .theories h4 {
     margin-bottom: 0.75rem;
+}
+
+.theories h4 {
+    text-align: center;
+    font-size: var(--medium-large-font);
 }
 
 .research {
     padding: 1rem 2rem;
     max-width: 150ch;
+}
+
+#disclaimer {
+    text-align: left;
+    font-size: var(--medium-font);
+    margin: 2rem;
 }
 
 #top, #top:visited, #top:hover {
