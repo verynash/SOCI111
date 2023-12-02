@@ -40,6 +40,7 @@ h1{
     padding: 1rem 1rem 0 1rem;
     text-transform: uppercase;
     margin-top: 3rem;
+    color: var(--secondary-color)
 }
 
 ul {
@@ -62,25 +63,23 @@ button {
     width: clamp(200px, 20vw, 300px);
     padding: 0.5rem;
     margin: 1rem;
-    background-color: var(--secondary-color);
-    border: 2px solid var(--tertiary-color);
+    background-color: var(--fourth-color);
+    border: 2px solid var(--secondary-color);
     box-shadow: ;
     border-radius: 12px 8px 12px 8px;
-    color: var(--fifth-color);
+
 }
 
-a {
+a, a:visited {
     text-decoration: none;
     font-size: var(--medium-font);
-}
-
-a:visited {
-    color: inherit;
+    color: var(--secondary-color)
 }
 
 h2 {
     text-align: center;
     margin: 0.5rem;
+    color: var(--secondary-color);
 }
 
 footer {
