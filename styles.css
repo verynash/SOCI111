@@ -108,13 +108,22 @@ figcaption {
     font-family: var(--secondary-font-family);
 }
 
-.theorists p, .research p {
+.theorists p, .research p, .theories p {
     margin-bottom: 0.75rem;
 }
 
 .research {
     padding: 1rem 2rem;
     max-width: 150ch;
+}
+
+#top, #top:visited, #top:hover {
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--small-font);
+    margin: 1rem auto;
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 footer {
@@ -139,7 +148,7 @@ footer {
         text-decoration: underline;
     }
 
-    .theorist-nav ul {
+    .theorist-nav ul, .theory-nav ul {
         display: flex;
         gap: 8px;
     }
