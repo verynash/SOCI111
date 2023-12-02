@@ -108,8 +108,13 @@ figcaption {
     font-family: var(--secondary-font-family);
 }
 
-.theorists p {
+.theorists p, .research p {
     margin-bottom: 0.75rem;
+}
+
+.research {
+    padding: 1rem 2rem;
+    max-width: 150ch;
 }
 
 footer {
