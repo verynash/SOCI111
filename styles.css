@@ -9,6 +9,7 @@
     --small-font: 14px;
     --nav-font: #F5F5F5;
     --font-family: Garamond, sans-serif, arial;
+    --secondary-font-family: 'Times New Roman', Times, serif;
 }
 
 *,
@@ -37,6 +38,10 @@ h1{
     text-transform: uppercase;
 }
 
+h2 {
+    margin-bottom: 1rem;
+}
+
 ul {
     display: flex;
     flex-wrap: nowrap;
@@ -61,6 +66,48 @@ a:visited {
     color: inherit;
 }
 
+main {
+    font-size: var(--medium-font);
+}
+
+section {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 150ch;
+}
+
+.references {
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 100ch;
+    font-size: var(--medium-font);
+}
+
+.references p {
+    margin-bottom: .5rem;
+    padding-left: 30px;
+    text-indent: -30px;
+
+}
+
+#ref-title {
+    text-align: center;
+    font-size: var(--large-font);
+    margin-top: 1rem;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: var(--small-font);
+    font-family: var(--secondary-font-family);
+}
+
+.theorists p {
+    margin-bottom: 0.75rem;
+}
+
 footer {
     margin: auto auto 0 auto;
     padding: 0.5rem;
@@ -68,4 +115,33 @@ footer {
     color: var(--primary-color);
     width: 100%;
     text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    ul {
+        display: block;
+    }
+
+    li {
+        margin-bottom: 0.35rem;
+    }
+
+    .page-nav a {
+        text-decoration: underline;
+    }
+
+    .theorist-nav ul {
+        display: flex;
+        gap: 8px;
+    }
+
+    section {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    img {
+        width: 80vw;
+        height: auto;
+    }
 }
